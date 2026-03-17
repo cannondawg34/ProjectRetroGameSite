@@ -1,5 +1,4 @@
-import { HStack, Link, Text } from "@chakra-ui/react";
-import React from "react";
+import { Box, HStack, Link } from "@chakra-ui/react";
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -10,15 +9,20 @@ const navLinks = [
 
 const NavBar = () => {
   return (
-    <>
-      <HStack justifyContent="space-between" padding="10px">
+    <Box w="100%" py={3}>
+      <HStack
+        maxW="900px"
+        mx="auto"
+        justify="center"
+        gap={40}
+      >
         {navLinks.map((link) => (
           <Link key={link.label} href={link.path}>
             {link.label}
           </Link>
         ))}
       </HStack>
-    </>
+    </Box>
   );
 };
 

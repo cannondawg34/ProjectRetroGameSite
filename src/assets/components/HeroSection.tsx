@@ -3,8 +3,7 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <Box bg = "gray.400" color = "white" py = {20} minH = "50vh">
-    <Container maxW="7xl">
+    <Box bg = "gray.400" color = "white" py = {20} minH = "50vh" w = "100%">
         <HStack gap ={4} align = 'center' justify="center">
             <VStack align="center" gap={6} textAlign="center">
               <Heading fontSize={{ base: "4xl", md: "6xl" }} lineHeight="1.1">
@@ -22,8 +21,6 @@ const HeroSection = () => {
             </VStack>
             <Image/>
         </HStack>
-    </Container>
-
     </Box>
   )
 }

@@ -1,13 +1,10 @@
-import './App.css'
-import HeroSection from './assets/components/HeroSection'
-import NavBar from './assets/components/NavBar'
+import HomePage from './assets/pages/HomePage'
 
 function App() {
 
   return (
     <>
-    <NavBar/>
-    <HeroSection/>
+    <HomePage/>
     </>
   )
       
