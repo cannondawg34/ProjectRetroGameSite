@@ -1,9 +1,19 @@
-import React from 'react'
+import { SimpleGrid } from "@chakra-ui/react";
+import { topSellers } from "../../data/games";
+import GameCard from "./GameCard";
 
 const GameGrid = () => {
   return (
-    <div>GameGrid</div>
-  )
-}
+    <SimpleGrid
+      columns={{ sm: 1, md: 2, lg: 3, xl: 5 }}
+      padding="10px"
+      gap={3}
+    >
+      {topSellers.map((game) => (
+        <GameCard key={game.id} game={game} />
+      ))}
+    </SimpleGrid>
+  );
+};
 
-export default GameGrid
+export default GameGrid;
